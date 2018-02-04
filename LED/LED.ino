@@ -17,6 +17,8 @@
   modified 8 Sep 2016
   by Colby Newman
 
+  modified 2 Feb 2018
+  by H.F.
   This example code is in the public domain.
 
   http://www.arduino.cc/en/Tutorial/Blink
@@ -29,6 +31,15 @@ void setup() {
   digitalWrite(2, LOW ); //Close LED
   pinMode(3, OUTPUT); // Camera
   digitalWrite(3, LOW); //Close Camera
+
+  //capture the initation pictures
+  digitalWrite(2, HIGH); // Open stimulate LED
+  digitalWrite(3, HIGH); // Capture two times
+  delay(250);
+  digitalWrite(3, LOW);
+  delay(250);
+  digitalWrite(3, HIGH);
+  delay(250);
 }
 
 // the loop function runs over and over again forever
