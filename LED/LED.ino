@@ -42,5 +42,6 @@ void loop() {
   delay(500);             // keep 0.5s
   digitalWrite(3, LOW);   // Close camera
   delay(1500);             // break 1.5 second  
+  // FPS=0.25FPS
  
 }
